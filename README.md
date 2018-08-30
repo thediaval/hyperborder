@@ -1,7 +1,7 @@
-# hyperborder - extension for Hyper
+# hyperborder
 adds a gradient border to the `Hyper` terminal
 
-![](https://cldup.com/pL94ODfQNP.png)
+![](https://pasteboard.co/HBB6MEj.png)
 
 ## Installation
 add it to plugins in your `~/.hyper.js` configuration
@@ -21,6 +21,7 @@ The following settings can be configured by adding a `hyperBorder` section in yo
 | Setting              | Type                 | Description                                            |
 |----------------------|----------------------|--------------------------------------------------------|
 | `borderWidth`        | `string`             | CSS string for how thick the borders should be         |
+| `adminBorderWidth`   | `string`             | CSS string for how thick the borders for an admin/elevated window.         |
 | `borderRadiusInner`  | `string`             | CSS string for round inner corners                     |
 | `borderRadiusOuter`  | `string`             | CSS string for round outer corners                     |
 | `borderColors`       | `string`, `string[]` | The color(s) for the border                            |
@@ -42,7 +43,8 @@ module.exports = {
     ...
       hyperBorder: {
         borderColors: ['#fc1da7', '#fba506'],
-        borderWidth: '8px'
+        borderWidth: '2px',
+        adminBorderWidth: '8px'
       }
     ...
   }
