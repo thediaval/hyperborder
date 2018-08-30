@@ -1,7 +1,7 @@
 # hyperborder
 adds a gradient border to the `Hyper` terminal
 
-![](https://pasteboard.co/HBB6MEj.png)
+![](https://image.ibb.co/gPka7p/hyperborder.png)
 
 ## Installation
 add it to plugins in your `~/.hyper.js` configuration
@@ -18,16 +18,16 @@ then just restart `Hyper` app or go to the menu 'Plugins / Update All Now'
 ## Configuration
 The following settings can be configured by adding a `hyperBorder` section in your `.hyper.js` `config` section:
 
-| Setting              | Type                 | Description                                            |
-|----------------------|----------------------|--------------------------------------------------------|
-| `borderWidth`        | `string`             | CSS string for how thick the borders should be         |
-| `adminBorderWidth`   | `string`             | CSS string for how thick the borders for an admin/elevated window.         |
-| `borderRadiusInner`  | `string`             | CSS string for round inner corners                     |
-| `borderRadiusOuter`  | `string`             | CSS string for round outer corners                     |
-| `borderColors`       | `string`, `string[]` | The color(s) for the border                            |
-| `adminBorderColors`  | `string`, `string[]` | The color(s) for the border for an admin/elevated window. This follows the precedence  of `adminBorderColors` > `borderColors` > defaultColors                                    |
-| `blurredColors`      | `string`, `string[]` | The color(s) of the borders when the window isn't active |
-| `blurredAdminColors` | `string`, `string[]` | The color(s) of the borders when the admin/elevated window isn't active. This follows the precedence of `blurredAdminColors` > `blurredColors` > `adminBorderColors` > `borderColors` > defaultColors |
+| Setting              | Type                 | Description                                            | Default Value |
+|----------------------|----------------------|--------------------------------------------------------|---------------|
+| `borderWidth`        | `string`             | CSS string for how thick the borders should be         | 0px           |
+| `adminBorderWidth`   | `string`             | CSS string for how thick the borders for an admin/elevated window.         | 2px           |
+| `borderRadiusInner`  | `string`             | CSS string for round inner corners                     | 0px           |
+| `borderRadiusOuter`  | `string`             | CSS string for round outer corners                     | 0px           |
+| `borderColors`       | `string`, `string[]` | The color(s) for the border                            | ['#fc1da7', '#fba506']          |
+| `adminBorderColors`  | `string`, `string[]` | The color(s) for the border for an admin/elevated window. This follows the precedence  of `adminBorderColors` > `borderColors` > defaultColors                                    | Same as `borderColors`           |
+| `blurredColors`      | `string`, `string[]` | The color(s) of the borders when the window isn't active | Same as `borderColors`           |
+| `blurredAdminColors` | `string`, `string[]` | The color(s) of the borders when the admin/elevated window isn't active. This follows the precedence of `blurredAdminColors` > `blurredColors` > `adminBorderColors` > `borderColors` > defaultColors | Same as `borderColors`           |
 
 ## A note on admin/root colors
 The use of Hyper under the admin/root account is mainly intended for Windows' users (where it is common to run an application in

@@ -41,7 +41,7 @@ module.exports.reduceUI = (state, {type, config}) => {
       return state.set('hyperBorder', Object.assign({
         animate: false,
         backgroundColor: config.backgroundColor,
-        borderWidth: '0',
+        borderWidth: '0px',
         adminBorderWidth: '2px',
         borderRadiusInner: '0',
         borderRadiusOuter: '0',
