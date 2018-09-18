@@ -1,19 +1,19 @@
-# hyperborder
-adds a gradient border to the `Hyper` terminal
+# hyperborder-elevated
+Customized version of [hyperborder](https://github.com/webmatze/hyperborder) extension
 
-![](https://image.ibb.co/gPka7p/hyperborder.png)
+![](hyperborder.png?raw=true)
 
 ## Installation
-add it to plugins in your `~/.hyper.js` configuration
+Add it to plugins in your `~/.hyper.js` configuration
 
 ````
 module.exports = {
   ...
-  plugins: ['hyperborder']
+  plugins: ['hyperborder-elevated']
   ...
 }
 ````
-then just restart `Hyper` app or go to the menu 'Plugins / Update All Now'
+then just restart `Hyper` app or go to the menu View > Full Reload
 
 ## Configuration
 The following settings can be configured by adding a `hyperBorder` section in your `.hyper.js` `config` section:
@@ -28,12 +28,6 @@ The following settings can be configured by adding a `hyperBorder` section in yo
 | `adminBorderColors`  | `string`, `string[]` | The color(s) for the border for an admin/elevated window. This follows the precedence  of `adminBorderColors` > `borderColors` > defaultColors                                    | Same as `borderColors`           |
 | `blurredColors`      | `string`, `string[]` | The color(s) of the borders when the window isn't active | Same as `borderColors`           |
 | `blurredAdminColors` | `string`, `string[]` | The color(s) of the borders when the admin/elevated window isn't active. This follows the precedence of `blurredAdminColors` > `blurredColors` > `adminBorderColors` > `borderColors` > defaultColors | Same as `borderColors`           |
-
-## A note on admin/root colors
-The use of Hyper under the admin/root account is mainly intended for Windows' users (where it is common to run an application in
-elevated mode), since on Linux/OSX you would typically utilize the `sudo <command>` command. _Technically_ you can run Hyper as root
-on non-Windows machines (there are issues running Hyper as root under a [Wayland](https://wayland.freedesktop.org/) desktop), though
-in this case, the root user will actually have their own copy of `.hyper.js` configuration.
 
 ### EXAMPLE: Set Border Colors And Width
 
@@ -71,7 +65,6 @@ module.exports = {
 Then every newly opened `Hyper` terminal window will have a different colored border.
 
 ### EXAMPLE: Animate Border Colors
-You like some animations? Then try this:
 
 ```javascript
 module.exports = {

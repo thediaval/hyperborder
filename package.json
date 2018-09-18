@@ -1,14 +1,17 @@
 {
-  "name": "hyperborder",
-  "version": "1.1.1",
-  "author": "Mathias Karstädt",
+  "name": "hyperborder-elevated",
+  "version": "1.0.0",
+  "author": "Yasin Aydın",
   "keywords": [
-    "hyper hyperterm hyperborder terminal"
+    "hyper",
+    "hyperterm",
+    "hyperborder",
+    "terminal"
   ],
-  "description": "Extension to add border effects to the Hyper terminal",
+  "description": "Extension to add border effects to the Hyper Terminal",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/webmatze/hyperborder.git"
+    "url": "git+https://github.com/thediaval/hyperborder-elevated.git"
   },
   "dependencies": {
     "is-elevated": "^2.0.1"
